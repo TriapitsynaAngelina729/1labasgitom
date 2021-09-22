@@ -1,3 +1,4 @@
+программа 1 
 #include <stdio.h>
  int main(){
      int a , b, s , p;
@@ -8,5 +9,16 @@
      s = a  * b;
      p = 2 *(a + b);
      printf ("Периметр равен %i, Площадь равна %i",p , s);
+     return 0;
+ }
+программа 2
+#include <stdio.h>
+ int main(){
+     float d , pi ,l;
+  printf("введите диаметр окружности для вычисления длины окружности");
+  scanf("%f",&d);
+  pi = 3.14;
+  l = pi * d ;
+  printf("длина окружности равна %f\n", l);
      return 0;
  }
