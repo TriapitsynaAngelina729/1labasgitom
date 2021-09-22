@@ -22,3 +22,15 @@
   printf("длина окружности равна %f\n", l);
      return 0;
  }
+ программа 3
+ #include <stdio.h>
+ int main(){
+     float a ,b ,cr;
+  printf("введите число a ");
+  scanf("%f",&a);
+  printf("введите число b для нахождения среднего арифметического ");
+  scanf("%f",&b);
+  cr = (a+b)/2 ; 
+  printf("среднее арифметическое a и b = %f\n", cr);
+     return 0;
+ }
