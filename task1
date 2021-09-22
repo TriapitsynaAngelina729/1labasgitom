@@ -1,0 +1,12 @@
+#include <stdio.h>
+ int main(){
+     int a , b, s , p;
+     printf("введите число a");
+     scanf("%i",&a);
+     printf("введите число b");
+     scanf("%i", &b);
+     s = a  * b;
+     p = 2 *(a + b);
+     printf ("Периметр равен %i, Площадь равна %i",p , s);
+     return 0;
+ }
