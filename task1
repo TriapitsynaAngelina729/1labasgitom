@@ -62,3 +62,32 @@ printf("введите число а");
     }
     return 0 ;
 }
+программа 5
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h> //библиотека , которая нужна для модулей
+int main() {
+float a , b , sum ,raz,pr,chas ;
+printf("введите число а");
+ scanf("%f",&a);
+ if (a != 0) {
+        printf("введите число b");
+    scanf("%f",&b);
+    if (b != 0) {
+        sum = abs(a)+abs(b);
+        raz = abs(a)-abs(b);
+        pr =abs(a)*abs(b);
+        chas = abs(a)/abs(b);
+        printf("сумма модулей чисел = %f, разность чисел = %f, произведение модулей чисел = %f, частное модулей чисел = %f\n", sum ,raz,pr,chas);
+    }
+    else {
+        printf("программа не работает, так как введён 0");
+    }
+ }
+ else {
+        printf("программа не работает, так как введён 0");
+    }
+    return 0 ;
+
+}
+
