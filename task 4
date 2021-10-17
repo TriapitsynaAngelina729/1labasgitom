@@ -1,60 +1,60 @@
 //задание 4 
-/* #включить <stdio.h>
-#включить <math.h>
+/* #include <stdio.h>
+#include <math.h>
 int main() {
-поплавок v1,v2,s,s1,s2,s3,t;
-printf("введите скорость 1 автомобиля ");
+float v1,v2,s,s1,s2,s3,t;
+printf("enter the speed of 1 car ");
 scanf("%f",&v1);
-printf("введите скорость 2 автомобиля ");
+printf("enter the speed of 2 car ");
 scanf("%f",&v2);
-printf("введите расстояние между двумя автомобилями ");
+printf("enter the distance between the two cars ");
 scanf("%f",&s3);
-printf("введите время, за которое проехали автомобили ");
+printf("enter the time that the cars have traveled ");
 scanf("%f",&t);
 s1=v1*t;
 s2=v2*t;
 s = s1+s2+s3;
-printf("расстояние между автомобилями в %f часов равно %f",t,s);
+printf("the distance between cars in %f hours is %f",t,s);
 return 0;
 } */
 //задание 1
-/* #включить <stdio.h>
-#включить <math.h>
+/* #include <stdio.h>
+#include <math.h>
 int main(){
- плавают a,pi,r;
- pi = 3,14;
-printf("введите A (0<A;
+ float a,pi,r;
+ pi = 3.14;
+printf("enter A (0<A<360) ");
 scanf("%f",&a);
- если ((a>0)&&(a>
-r = (плавающий)a*пи/180 ;
+    if ((a>0)&&(a<360)){
+r = (float)a*pi/180 ;
 printf("%f",r);
 }
-ещё 
+else 
 {
- printf("Ошибка , A (0<A;
+    printf("Error ,  A (0<A<360) ");
 }
-возврат 0 ;
+return 0 ;
 }
 */
 //задание 2 
-/*#включить <stdio.h>
-#включить <math.h>
+/*#include <stdio.h>
+#include <math.h>
 int main(){
- поплавок a,pi,g;
- pi = 3,14;
-printf("введите A (0<A;
-если ((a>0) && (a>;
+    float a,pi,g;
+    pi = 3.14;
+printf("enter A (0<A<2pi) ");
+if ((a>0) && (a<(2*3.14)));
 scanf("%f",&a);
-g = a*180/пи ;
+g = a*180/pi ;
 printf("%f",g);
-возврат 0 ;
+return 0 ;
 } */
 // задание 3
-/*#включить <stdio.h>
-#включить <math.h>
+/*#include <stdio.h>
+#include <math.h>
 
 int main(){
- поплавок a,x,y,m,n;
+    float a,x,y,m,n;
 printf("введите количество килограм X ");
 scanf("%f",&x);
 printf("введите стоимость %f кг конфет ", x);
@@ -89,27 +89,27 @@ int main() {
 /*#include <stdio.h>
 #include <math.h>
 int main() {
- поплавок a1,a2,b1,b2,x,y,c1,c2,del1,del2,del;
- printf("Найти решение системы линейных уравнений вида\n");
- printf("A1 • x + B1 • y = C1\n");
- printf("A2 • x + B2 • y = C2\n");
- printf("Введите a1 ");
- scanf("%f" ,&a1);
- printf("Введите b1 ");
- scanf("%f" ,&b1);
- printf("Введите c1 ");
- scanf("%f" ,&c1);
- printf("Введите a2 ");
- scanf("%f" ,&a2);
- printf("Введите b2 ");
- scanf("%f" ,&b2);
- printf("Введите c2 ");
- scanf("%f" ,&c2);
- del = (a1*b2) - (b1*a2);
- del1 = (c1*b2)-(b1*c2);
- del2 = (a1*c2)-(c1*a2);
- x = дел1/дел;
- y = del2/del;
- printf("Y = %f, X = %f",y,x);
- возврат 0 ;
+    float a1,a2,b1,b2,x,y,c1,c2,del1,del2,del;
+   printf("Find a solution to a system of linear equations of the form\n");
+   printf("A1 • x + B1 • y = C1\n");
+   printf("A2 • x + B2 • y = C2\n");
+   printf("Enter a1 ");
+   scanf("%f" ,&a1);
+   printf("Enter b1 ");
+   scanf("%f" ,&b1);
+   printf("Enter c1 ");
+   scanf("%f" ,&c1);
+   printf("Enter a2 ");
+   scanf("%f" ,&a2);
+   printf("Enter b2 ");
+   scanf("%f" ,&b2);
+   printf("Enter c2 ");
+   scanf("%f" ,&c2);
+   del = (a1*b2) - (b1*a2);
+   del1 = (c1*b2)-(b1*c2);
+   del2 = (a1*c2)-(c1*a2);
+   x = del1/del;
+   y = del2/del;
+   printf("Y = %f, X = %f",y,x);
+   return 0 ;
 } */
