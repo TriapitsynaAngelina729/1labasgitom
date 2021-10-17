@@ -1,0 +1,98 @@
+1ое
+#include <stdio.h>
+#include <math.h>
+int main() {
+float byte ,kbyte ; 
+printf ("введите количесво байт , которое хотите перевести в байты ");
+scanf("%f",&byte);
+kbyte = byte/1024;
+kbyte=ceil(kbyte);
+printf("%2.f байт(а) это %2.f килобайт(а)",byte,kbyte); 
+return 0 ;
+}
+2ое 
+#include <stdio.h>
+#include <math.h>
+int main() {
+int a,b,c; 
+printf ("Введите длину отрезка A ");
+scanf("%i",&a);
+printf ("Введите длину отрезка B ");
+scanf("%i",&b);
+if (a>b) 
+{
+ c = a/b;
+ printf("отрезок А включает в себя %i отрезков B",c);
+}
+else 
+printf("Error");
+return 0 ;
+}
+задание 3
+#include <stdio.h>
+#include <math.h>
+int main() {
+int a,b,c; 
+printf ("Введите длину отрезка A ");
+scanf("%i",&a);
+printf ("Введите длину отрезка B ");
+scanf("%i",&b);
+if (a>b) 
+{
+ c = a%b;
+ printf("длина незанятой части отрезка A %i",c);
+}
+else 
+printf("Error");
+return 0 ;
+}
+
+
+4ое
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a,a1,a2;
+    printf("введите 2у значное число ");
+    scanf("%i",&a);
+    if ((a>=10) && (a<=99))
+    {
+     a1= a/10;
+     a2= a%10;
+     printf("%i%i",a2,a1);
+    }
+    else 
+    printf("Error");
+    return 0;
+}
+5ое
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+ int a,a1,a2,a3;
+ printf("введите 3 значное число ");
+ scanf("%i",&a);
+ if ((a>=100) && (a<=999))
+    {
+ if ((a%10==0)&&(a%100==0)){
+ a = a/100;
+ printf("00%i",a); 
+        }
+ else
+        {
+a1 = a/100;
+printf("%i\n",a1);
+a3 = a-((a/10)*10);
+printf("%i\n",a3);
+a2 = (a-a1*100 - a3)/10;
+printf("%i\n",a2);
+a = a2*100+a3*10+a1;
+printf("%i\n",a);
+}
+    }
+ else 
+ printf("Error");
+ return 0;
+}
