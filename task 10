@@ -1,0 +1,111 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+int n = 1;
+int b ;
+while (n == 1) {
+printf("enter number of task ");
+scanf("%i",&b);
+ if (b == 1) {
+        int a,b;
+    printf("Enter A ");
+    scanf("%i",&a);
+    printf("Enter B ");
+    scanf("%i",&b);
+    if ((a>2)&&(b<=3)){
+        printf("the identity is correct, %i > 2 and %i <= 3",a,b);
+    }
+    else
+        printf("error\n");
+ }
+ if (b == 2) {
+  int a,b,c;
+    printf("Enter A ");
+    scanf("%i",&a);
+    printf("Enter B ");
+    scanf("%i",&b);
+     printf("Enter C ");
+    scanf("%i",&c);
+    if ((a<b)&&(b<c)){
+        printf("right, %i<%i<%i\n",a,b,c);
+    }
+    else
+        printf("error\n");
+ }
+ if (b == 3) {
+        int a;
+ printf("Enter a ");
+ scanf("%i",&a);
+ if ((a%2==0)&&(a>=10)&&(a<100)){
+    printf("the number %i is two-digit and even\n",a);
+ }
+ else
+    printf("error\n");
+ }
+  if (b == 4){
+printf("enter a ");
+int a,a1,a2,a3;
+scanf("%i",&a);
+a1 = a/100;
+a3 = a-((a/10)*10);
+a2 = (a-a1*100 - a3)/10;
+if ((a>=100)&&(a<1000)&&(((a1>a2)&&(a2>a3))||((a1<a2)&&(a2<a3)))) {
+    printf("The digits of this number form an ascending or descending sequence\n");
+}
+else
+    printf("error\n");
+  }
+  if (b==5) {
+ printf("enter a ");
+int a;
+scanf("%i",&a);
+if ((a>=1000)&&(a<10000)){
+        int a1,a2,a3,a4;
+        a1=a%100;
+        a2=a1/10;
+        a3=a1%10;
+        a4=a3*10+a2;
+    if (a4==(a/100)){
+        printf("This number %i is read the same from left to right and from right to left\n",a);
+    }
+    else
+    printf("error\n");
+}
+else
+    printf("error\n");
+}
+  if (b==6) {
+   int a,b,c;
+    printf("Enter A ");
+    scanf("%i",&a);
+    printf("Enter B ");
+    scanf("%i",&b);
+    printf("Enter C ");
+    scanf("%i",&c);
+    if ((a*a==b*b+c*c)||(b*b==a*a+c*c)||(c*c==a*a+b*b)){
+        printf("a triangle with rectangular %i %i %i sides\n",a,b,c);
+    }
+    else
+        printf("error,a triangle with rectangular %i %i %i not sides\n",a,b,c);
+}
+
+  if (b==7) {
+printf("Enter A ");
+int a,b,c;
+    scanf("%i",&a);
+    printf("Enter B ");
+    scanf("%i",&b);
+    printf("Enter C ");
+    scanf("%i",&c);
+    if ((a+b>c)&&(c+b>a)&&(a+c>b)){
+     printf("a triangle with rectangular %i %i %i exists\n",a,b,c);
+    }
+    else
+  printf("a triangle with rectangular %i %i %i not exists\n",a,b,c);
+}
+
+printf("if you want to continue, enter 1, otherwise enter 0 ");
+scanf("%i",&n);
+}
+return 0;
+}
