@@ -1,0 +1,102 @@
+задание 1 
+#включить <stdio.h>
+int main() {
+ int a,b,c;
+ printf("Введите a");
+ scanf("%i",&a );
+ printf("Введите b");
+ scanf("%i",&b );
+ c = a;
+ a = b;
+ b = c;
+ printf("a= %i,b = %i ",a,b);
+ возврат 0 ;
+}
+задание 2
+#включить <stdio.h>
+int main() {
+    int a,b,c,dop,dop1 ;
+ printf("Введите a");
+ scanf("%i",&a );
+ printf("Введите b");
+ scanf("%i",&b );
+ printf("Введите c");
+ scanf("%i",&c );
+ доп1 = в;
+ b = a;
+ a = c;
+ c = доп1;
+ printf("a= %i,b = %i, c = %i ",a,b,c);
+ возврат 0 ;
+}
+задание 3
+#включить <stdio.h>
+int main() {
+ int a,b,c,dop,dop1 ;
+ printf("Введите a");
+ scanf("%i",&a );
+ printf("Введите b");
+ scanf("%i",&b );
+ printf("Введите c");
+ scanf("%i",&c );
+ доп1 = c;
+ c = a;
+ a = b;
+ b = доп1;
+ printf("a= %i,b = %i, c = %i ",a,b,c);
+ возврат 0 ;
+}
+задание 4
+#включить <stdio.h>
+#включить <math.h>
+int main() {
+int x;
+поплавковый pr;
+printf("Введите x ");
+scanf("%i",&x);
+pr = 3 * pow(x,6)-6*pow(x,2)-7;
+printf("composition = %f", pr);
+return 0;
+}
+задание 5
+#include <stdio.h>
+#include <math.h>
+int main() {
+int x;
+float y;
+printf("Enter x");
+scanf("%i",&x);
+y = 4 * pow(x-3,6)-7*pow(x-3,3)+2;
+printf("y = %f", y);
+return 0;
+}
+задание 6
+#include <stdio.h>
+#include <math.h>
+int main(){
+int a,a8,p;
+printf("введите a");
+scanf("%i",&a);
+р = 2;
+р = р*р*р;
+a8= pow(a,p);
+printf("a= %i",a8);
+возврат 0 ;
+}
+задание 7
+#включить <stdio.h>
+#включить <математика.h>
+int main() {
+поплавок a,a15,p,p1;
+printf ("введите A");
+scanf ("%f",&a);
+p1 = a*a; //2p1
+printf("%f\n",p1);
+p= p1*a; //3p
+printf("%f\n",p);
+p= p1*p;//5p
+printf("%f\n",p1);
+a15 = p*p*p;
+printf("число A в степени 15 равно %f ", a15);
+возврат 0;
+}
