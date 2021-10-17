@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+int n = 1;
+int b ;
+while (n == 1) {
+printf("enter number of task ");
+scanf("%i",&b);
+ if (b == 1) {
+    printf("enter the number of seconds that have passed since the beginning ");
+    int sec,time;
+    scanf("%i",&sec);
+    time = sec%60;
+    printf("the number of seconds that have passed since the beginning of the last minute - %i\n", time);
+ }
+ if (b == 2) {
+   printf("Enter the day of this year: ");
+   int k;
+   scanf("%i",&k);
+   if ((k>=1)&& (k<=365)){
+       if (k%7 == 1)
+            printf("%k the day of the week is Monday\n ",k);
+       if (k%7 == 2)
+            printf("%k the day of the week is tuesday\n",k);
+       if (k%7 == 3)
+            printf("%k the day of the week is Wednesday\n",k);
+       if (k%7 == 4)
+            printf("%k the day of the week is Thursday\n",k);
+       if (k%7 == 5)
+            printf("%k the day of the week is friday\n",k);
+       if (k%7 == 6)
+            printf("%k the day of the week is saturday\n",k);
+       if (k%7 == 0)
+            printf("%k the day of the week is sunday\n",k);
+
+       }
+ }
+ if (b == 3) {
+    int k ,n,a;
+    printf ("Enter the day of this year: ");
+    scanf ("%i",&k);
+    if ((k>=1)&& (k<=365)) {
+ printf("Enter what number of the week was January 1: ");
+ scanf("%i",&n);
+ if ((n>=1)&&(n<=7)) {
+     a =((k+n-2)%7)+1;
+     printf("Day of the week : %i\n ",a);
+ }
+ }
+ }
+  if (b == 4){
+    printf("Enter A ");
+    int a,b,c,sq,s,ost;
+    scanf("%i",&a);
+    printf("Enter B ");
+    scanf("%i",&b);
+    printf("Enter C ");
+    scanf("%i",&c);
+    sq=(a/c)*(b/c);
+    s =a*b-sq*pow(c,2);
+   printf("Squares can be placed on the rectangle = %i, the unoccupied area of the rectangle is equal to %i \n",sq,s);
+  }
+  if (b==5) {
+        int y,w;
+    printf("enter the year ");
+    scanf("%i",&y);
+    w = ((y-1)/100)+1;
+    printf("%i this is %i century\n",y,w);
+  }
+ printf("if you want to continue, enter 1, otherwise enter 0 ");
+ scanf("%i",&n);
+}
+return 0;
+}
