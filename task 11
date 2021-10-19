@@ -1,0 +1,141 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+int n = 1;
+int b ;
+while (n == 1) {
+printf("enter number of task ");
+scanf("%i",&b);
+ if (b == 1) {
+        int a,b;
+  printf("Enter A ");
+  scanf("%i",&a);
+  printf("Enter B ");
+  scanf("%i",&b);
+ if (b!=a){
+  if (a>b) {
+    b = a ;
+    printf("A = %i, B = %i\n",a,b);
+  }
+  if (b>a){
+   a = b;
+    printf("A = %i, B = %i\n",a,b);
+  }
+ }
+ else {
+    a = 0;
+    b = 0;
+      printf("A = %i, B = %i\n",a,b);
+ }
+
+    }
+if (b == 2) {
+int x,y,z;
+int max ,min;
+printf("Enter X ");
+scanf("%i",&x);
+printf("Enter Y ");
+scanf("%i",&y);
+printf("Enter   Z ");
+scanf("%i",&z);
+if ((x!=y)&&(x!=z)&&(z!=y)){
+if ((x<y)&&(x<z)){
+    min=x;
+}
+if ((y<x)&&(y<z)){
+    min=y;
+}
+if ((z<x)&&(z<y)){
+    min=z;
+}
+max= x+y+z-min;
+printf("max sum = %i \n",max);
+}
+else
+ printf("error");
+}
+
+ if (b == 3) {
+        int a,b,c,ab,ac,s;
+printf("enter the coordinate where point A is located ");
+scanf("%i",&a);
+printf("enter the coordinate where point B is located ");
+scanf("%i",&b);
+printf("enter the coordinate where point C is located ");
+scanf("%i",&c);
+ab = abs(a-b);
+ac = abs(a-c);
+if (ac<ab){
+    printf("C is located closer to A than B , the distance between AC = %i \n",ac);
+}
+else
+   if (ab<ac)
+    printf("B is located closer to A than C , the distance between AB = %i \n",ab);
+   else
+    if (ab=ac)
+    printf("the distance between A B AND A C IS THE SAME \n");
+ }
+
+  if (b == 4){
+        int x ,y ;
+printf("enter x ");
+scanf("%i",&x);
+printf("enter y ");
+scanf("%i",&y);
+if ((x>0) && (y>0))
+    printf ("the point with coordinates %i %i is located in 1 quarter \n",x,y);
+if ((x<0) && (y>0))
+    printf ("the point with coordinates %i %i is located in 2 quarter \n",x,y);
+    if ((x<0) && (y<0))
+    printf ("the point with coordinates %i %i is located in 3 quarter \n",x,y);
+    if ((x>0) && (y<0))
+    printf ("the point with coordinates %i %i is located in 4 quarter \n",x,y);
+  }
+  if (b==5) {
+ int a;
+ printf("enter A ");
+scanf("%i",&a);
+if (a%2 == 0)
+    printf("%i чётное \n ",a);
+    else
+    printf("%i нечётное \n",a);
+    if (a>0)
+    printf("%i положительное \n",a);
+    else
+    if (a<0)
+    printf("%i отрицательное \n",a);
+    else
+    if (a == 0)
+    printf("%i нулевое число \n",a);
+
+}
+
+  if (b==6) {
+        int a;
+printf("Enter a ");
+scanf("%i",&a);
+if ((a>=1)&&(a<=999)) {
+    if (a>=100)
+        printf("число %i трехзначное",a);
+    else
+        if ((a>=10)&&(a<=99))
+        printf("число %i двузначное",a);
+        else
+        if ((a>=1)&&(a<=9));
+    printf("число %i десятичное",a);
+    if (a%2 == 0)
+        printf("число %i чётное",a);
+    else
+         printf("число %i нечётное",a);
+}
+else
+    printf("Error , A must be >1 and <999");
+}
+
+
+printf("if you want to continue, enter 1, otherwise enter 0 ");
+scanf("%i",&n);
+}
+return 0;
+}
