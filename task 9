@@ -19,19 +19,19 @@ scanf("%i",&b);
    scanf("%i",&k);
    if ((k>=1)&& (k<=365)){
        if (k%7 == 1)
-            printf("%k the day of the week is Monday\n ",k);
+            printf("%i the day of the week is Monday\n ",k);
        if (k%7 == 2)
-            printf("%k the day of the week is tuesday\n",k);
+            printf("%i the day of the week is tuesday\n",k);
        if (k%7 == 3)
-            printf("%k the day of the week is Wednesday\n",k);
+            printf("%i the day of the week is Wednesday\n",k);
        if (k%7 == 4)
-            printf("%k the day of the week is Thursday\n",k);
+            printf("%i the day of the week is Thursday\n",k);
        if (k%7 == 5)
-            printf("%k the day of the week is friday\n",k);
+            printf("%i the day of the week is friday\n",k);
        if (k%7 == 6)
-            printf("%k the day of the week is saturday\n",k);
+            printf("%i the day of the week is saturday\n",k);
        if (k%7 == 0)
-            printf("%k the day of the week is sunday\n",k);
+            printf("%i the day of the week is sunday\n",k);
 
        }
  }
@@ -72,3 +72,4 @@ scanf("%i",&b);
 }
 return 0;
 }
+
