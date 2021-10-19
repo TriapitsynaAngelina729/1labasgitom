@@ -117,17 +117,17 @@ printf("Enter a ");
 scanf("%i",&a);
 if ((a>=1)&&(a<=999)) {
     if (a>=100)
-        printf("число %i трехзначное",a);
+        printf("число %i трехзначное ",a);
     else
         if ((a>=10)&&(a<=99))
-        printf("число %i двузначное",a);
-        else
-        if ((a>=1)&&(a<=9));
-    printf("число %i десятичное",a);
+        printf("число %i двузначное ",a);
+        else 
+        if ((a>=1)&&(a<=9)) 
+        printf("число %i десятичное ",a);
     if (a%2 == 0)
-        printf("число %i чётное",a);
+        printf(" чётное \n ");
     else
-         printf("число %i нечётное",a);
+         printf(" нечётное \n");
 }
 else
     printf("Error , A must be >1 and <999");
@@ -139,3 +139,5 @@ scanf("%i",&n);
 }
 return 0;
 }
+
+
