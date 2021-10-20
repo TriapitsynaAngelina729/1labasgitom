@@ -57,21 +57,27 @@ else
 }
 
  if (b == 3) {
-        int a,b,c,ab,ac,s;
-printf("enter the coordinate where point A is located ");
-scanf("%i",&a);
-printf("enter the coordinate where point B is located ");
-scanf("%i",&b);
-printf("enter the coordinate where point C is located ");
-scanf("%i",&c);
-ab = abs(a-b);
-ac = abs(a-c);
+        float xa,ya,xb,yb,xc,yc,ab,ac,s;
+printf("enter the coordinate A x ");
+scanf("%f",&xa);
+printf("enter the coordinate  A y ");
+scanf("%f",&ya);
+printf("enter the coordinate  B x  ");
+scanf("%f",&xb);
+printf("enter the coordinate  B y  ");
+scanf("%f",&yb);
+printf("enter the coordinate  C x  ");
+scanf("%f",&xc);
+printf("enter the coordinate  C y  ");
+scanf("%f",&yc);
+ab = sqrt(pow(xa-xb,2)+pow(ya-yb,2));
+ac = sqrt(pow(xa-xc,2)+pow(ya-yc,2));
 if (ac<ab){
-    printf("C is located closer to A than B , the distance between AC = %i \n",ac);
+    printf("C is located closer to A than B , the distance between AC = %f \n",ac);
 }
 else
    if (ab<ac)
-    printf("B is located closer to A than C , the distance between AB = %i \n",ab);
+    printf("B is located closer to A than C , the distance between AB = %f \n",ab);
    else
     if (ab=ac)
     printf("the distance between A B AND A C IS THE SAME \n");
@@ -139,5 +145,4 @@ scanf("%i",&n);
 }
 return 0;
 }
-
 
