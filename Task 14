@@ -1,0 +1,137 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include <locale.h>
+int main() {
+setlocale(LC_ALL, "Rus");
+int n = 1;
+int b ;
+while (n == 1) {
+        printf("ENTER NUMBER OF A TASK ");
+        scanf("%i",&b);
+        if (b==1){
+    int a,b,n;
+    printf("Введите чсло A ");
+    scanf("%i",&a);
+    printf("Введите чсло B ");
+    scanf("%i",&b);
+    if (a<b){
+        int i;
+        for(i=a;i<=b;i++){
+            n=i-1;
+            int c=0;
+            for(n;c<=n;c++)
+            printf("%i",i);
+        }
+    }
+    else
+    if (a>b){
+        int i;
+        for(i=b;i<=a;i++){
+            n=i-1;
+            int c=0;
+            for(n;c<=n;c++)
+            printf("%i",i);
+        }
+    }
+}
+if (b == 2) {
+    int a,b,c;
+  printf("Enter a ");
+  scanf("%i",&a);
+  printf("Enter b ");
+  scanf("%i",&b);
+  if (a>b){
+  while ((a-b)>=0)
+  a=a-b;
+  printf("%i",a);
+  }
+  else
+  printf("A MUST BE >B");
+  return 0 ;
+}
+  if (b == 3){
+ int n;
+   printf("Дано целое число N (> 1). Вывести наименьшее из целых чисел K \n,");
+   printf("для которых сумма 1 + 2 + . . . + K будет больше или равна N, и саму эту сумму.");
+   printf("Enter N ");
+   scanf ("%i", &n);
+   int k = 0;
+   int a = 0;
+   while (a<n) {
+      k++;
+      a=a+3;
+   }
+   printf(" K = %i symma %i\n",k,a);
+}
+
+  if (b==4) {
+ printf("4. Начальный вклад в банке равен 1000 руб."
+  "Через каждый месяц размер вклада увеличивается на"
+  "P процентов от имеющейся суммы (P — вещественное число,"
+  "0 < P < 25). По данному P определить, через сколько месяцев"
+  "размер вклада превысит 1100 руб.,"
+  "и вывести найденное количество "
+  "месяцев K (целое число) и итоговый размер"
+  "вклада S (вещественное число).\n");
+  printf("Enter P - ");
+  float p,s,n,k;
+  scanf ("%f",&p);
+  if ((p>0)&&(p<25)){
+      s=1000;
+      k=1;
+      p=p/100+1;
+      do
+      {
+      s=s*p;
+      k+=1;
+      }
+      while(s<1100);
+      printf("kol months  %f,symma  %f",k,s);
+  }
+  else
+  printf("P must be >0 and <25");
+  return 0;
+  }
+
+if (b==5) {
+printf("HOD\n");
+ int a,b,c,d;
+  printf("enter a ");
+  scanf("%i",&a);
+  printf("enter b ");
+  scanf("%i",&b);
+  while(a!=b){
+      if (a>b)
+          a=a-b;
+      if (b>a)
+          b=b-a;
+  }
+   if (a=b)
+      printf("%i\n",a);
+}
+if (b==6){
+        int n;
+printf("Enter N ");
+scanf("%i",&n);
+if (n>0);
+int f1,f2,f;
+f1=1;
+f2=1;
+f=0;
+int k =2;
+while (f<n)
+{
+    k++;
+    f=f2+f1;
+    f2=f1;
+    f1=f;
+}
+printf("K = %i\n",k);
+}
+
+printf("if you want to continue, enter 1, otherwise enter 0 ");
+scanf("%i",&n);
+}
+return 0;
+}
